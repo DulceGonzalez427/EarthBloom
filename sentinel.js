@@ -1,9 +1,5 @@
-// Motor de comunicación con Sentinel Hub (cliente)
 
-//
-// IMPORTANTE
-// - Reemplaza TU_INSTANCE_ID por el ID real de tu instancia (Dashboard > Configuration instances).
-//
+
 const sentinelHubInstanceId = "TU_INSTANCE_ID";
 
 // Evalscript para índices con Sentinel-2 L2A
@@ -112,4 +108,5 @@ async function getSatelliteData(token, geojson) {
 window.sentinelHubInstanceId = sentinelHubInstanceId;
 window.getAuthToken = getAuthToken;
 window.getSatelliteData = getSatelliteData;
+
 window.LULC_EVALSCRIPT = LULC_EVALSCRIPT;
